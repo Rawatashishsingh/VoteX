@@ -5,7 +5,8 @@ import 'jspdf-autotable';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import './index.css';
 
-const API = 'http://localhost:5000/api';
+const API = import.meta.env.VITE_API_URL || 'https://votex-backend-u00t.onrender.com/api';
+
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
 function VoteXLogo({ size = 'md' }) {
