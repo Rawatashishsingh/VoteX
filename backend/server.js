@@ -6,7 +6,7 @@ const multer = require('multer');
 const { db, initializeDB } = require('./database');
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 // Ensure uploads directory exists
 const uploadDir = path.join(__dirname, 'uploads');
@@ -22,7 +22,7 @@ const storage = multer.diskStorage({
 });
 const upload = multer({ storage, limits: { fileSize: 5 * 1024 * 1024 } });
 
-app.use(cors());
+app.use(cors({ origin: '*', credentials: false }));
 app.use(express.json());
 app.use('/uploads', express.static(uploadDir));
 
