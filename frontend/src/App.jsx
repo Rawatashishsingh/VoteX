@@ -5,7 +5,7 @@ import 'jspdf-autotable';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import './index.css';
 
-const API = import.meta.env.VITE_API_URL || 'https://votex-backend-u00t.onrender.com/api';
+const API = import.meta.env.VITE_API_URL || 'https://votex-backend-u00f.onrender.com/api';
 
 
 // ── Helpers ──────────────────────────────────────────────────────────────────
