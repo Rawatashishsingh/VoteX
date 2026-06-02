@@ -187,7 +187,8 @@ export default function App() {
       </main>
 
       <footer className="border-t border-gray-200 py-6 text-center text-sm text-gray-400 cursor-pointer select-none" onClick={handleFooterClick}>
-        <strong className="text-black">VoteX</strong> · India's Public Opinion Platform · Not affiliated with any government body
+        <div className="mb-1"><strong className="text-black">VoteX</strong> · India's Public Opinion Platform · Not affiliated with any government body</div>
+        <div>© 2026 All Rights Reserved by <strong className="text-black">Vyxen Studio</strong></div>
       </footer>
     </div>
   );
